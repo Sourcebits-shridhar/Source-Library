@@ -57,7 +57,7 @@
         self.isAudio = TRUE;
         self.transitionEffect = eDissolve;
         self.transitionSmoothness = low;
-        self.contentmode = scaleToFill;
+        self.contentmode = scaleAspectFill;
         self.fadeInTime = 5;
         self.fadeOutTime = 5;
         self.timePerImage = 1;
@@ -841,19 +841,42 @@
         xCoordinate = 0;
         yCoordinate = 0;
     }
+    if (contentmode == scaleAspectFill)
+    {
+        xCoordinate = 0;
+        yCoordinate = 0;
+        if (convertedImage.size.width < newSize.width || convertedImage.size.height < newSize.height)
+        {
+            float widthRatio = convertedImage.size.width / newSize.width;
+            float heightRatio = convertedImage.size.height / newSize.height;
+        
+            if (widthRatio > heightRatio)
+            {
+                heightSize = newSize.height;
+                widthSize = convertedImage.size.width * (1/heightRatio);
+            }
+            else
+            {
+                widthSize = newSize.width;
+                heightSize = convertedImage.size.height * (1/widthRatio);
+            }
+        }
+        else
+        {
+            widthSize = convertedImage.size.width;
+            heightSize = convertedImage.size.height;
+        }
+    }
     else
     {
         widthSize = convertedImage.size.width;
         heightSize = convertedImage.size.height;
-        NSLog(@"Actual image size = %@",NSStringFromCGSize(convertedImage.size));
         if (convertedImage.size.width > newSize.width)
         {
-            NSLog(@"Altering width");
             float oldWidth = widthSize;
             widthSize = newSize.width;
             heightSize = convertedImage.size.height/((float)oldWidth/newSize.width);
         }
-        NSLog(@"post width size =  {%.02f, %.02f}",widthSize, heightSize);
         if (heightSize > newSize.height)
         {
             NSLog(@"Altering height");
@@ -874,6 +897,7 @@
     UIGraphicsEndImageContext();
     return newImage;
 }
+
 
 + (UIImage *)appendImage:(UIImage *)first to:(UIImage *)second atPoint:(CGPoint)point otherPoint:(CGPoint)otherPoint
 {

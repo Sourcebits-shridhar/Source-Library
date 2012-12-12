@@ -12,13 +12,10 @@
 		53F9D86F166DDE1400CE185A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9D86E166DDE1400CE185A /* CoreGraphics.framework */; };
 		53F9D875166DDE1400CE185A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53F9D873166DDE1400CE185A /* InfoPlist.strings */; };
 		53F9D877166DDE1400CE185A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F9D876166DDE1400CE185A /* main.m */; };
-		53F9D87B166DDE1400CE185A /* ITVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F9D87A166DDE1400CE185A /* ITVAppDelegate.m */; };
-		53F9D87E166DDE1400CE185A /* ITVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F9D87D166DDE1400CE185A /* ITVViewController.m */; };
 		53F9D881166DDE1400CE185A /* ITVViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F9D87F166DDE1400CE185A /* ITVViewController_iPhone.xib */; };
 		53F9D884166DDE1400CE185A /* ITVViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F9D882166DDE1400CE185A /* ITVViewController_iPad.xib */; };
 		53F9D88F166F0BE500CE185A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9D88E166F0BE500CE185A /* CoreAudio.framework */; };
 		53F9D891166F0BED00CE185A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9D890166F0BED00CE185A /* CoreMedia.framework */; };
-		53F9D896166F0D7000CE185A /* UIImage+ImageFromView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F9D895166F0D7000CE185A /* UIImage+ImageFromView.m */; };
 		53F9D897166F0DD100CE185A /* ImageToVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F9D88C166DDE5C00CE185A /* ImageToVideo.m */; };
 		53F9D8A4166F131100CE185A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9D8A3166F131100CE185A /* SystemConfiguration.framework */; };
 		53F9D8A6166F132000CE185A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9D8A5166F132000CE185A /* CoreImage.framework */; };
@@ -28,6 +25,9 @@
 		53F9D8AE166F13F000CE185A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9D8AD166F13F000CE185A /* MobileCoreServices.framework */; };
 		53F9D8AF166F140500CE185A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9D892166F0C0700CE185A /* AVFoundation.framework */; };
 		53F9D8FC166F72CA00CE185A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F9D8FB166F72CA00CE185A /* MediaPlayer.framework */; };
+		7260465F1676F2610049951E /* ITVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7260465E1676F2610049951E /* ITVAppDelegate.m */; };
+		726046631676F29C0049951E /* ITVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726046621676F29C0049951E /* ITVViewController.m */; };
+		726046671676F2AD0049951E /* UIImage+ImageFromView.m in Sources */ = {isa = PBXBuildFile; fileRef = 726046661676F2AD0049951E /* UIImage+ImageFromView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +39,6 @@
 		53F9D874166DDE1400CE185A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53F9D876166DDE1400CE185A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53F9D878166DDE1400CE185A /* ImageToVideo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageToVideo-Prefix.pch"; sourceTree = "<group>"; };
-		53F9D879166DDE1400CE185A /* ITVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITVAppDelegate.h; sourceTree = "<group>"; };
-		53F9D87A166DDE1400CE185A /* ITVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITVAppDelegate.m; sourceTree = "<group>"; };
-		53F9D87C166DDE1400CE185A /* ITVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITVViewController.h; sourceTree = "<group>"; };
-		53F9D87D166DDE1400CE185A /* ITVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITVViewController.m; sourceTree = "<group>"; };
 		53F9D880166DDE1400CE185A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ITVViewController_iPhone.xib; sourceTree = "<group>"; };
 		53F9D883166DDE1400CE185A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ITVViewController_iPad.xib; sourceTree = "<group>"; };
 		53F9D88B166DDE5C00CE185A /* ImageToVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageToVideo.h; path = ImageToVideo/ImageToVideo.h; sourceTree = "<group>"; };
@@ -50,8 +46,6 @@
 		53F9D88E166F0BE500CE185A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		53F9D890166F0BED00CE185A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		53F9D892166F0C0700CE185A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		53F9D894166F0D7000CE185A /* UIImage+ImageFromView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageFromView.h"; sourceTree = "<group>"; };
-		53F9D895166F0D7000CE185A /* UIImage+ImageFromView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageFromView.m"; sourceTree = "<group>"; };
 		53F9D8A3166F131100CE185A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		53F9D8A5166F132000CE185A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		53F9D8A7166F135D00CE185A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -59,6 +53,12 @@
 		53F9D8AB166F13E300CE185A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		53F9D8AD166F13F000CE185A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		53F9D8FB166F72CA00CE185A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7260465D1676F2610049951E /* ITVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITVAppDelegate.h; sourceTree = "<group>"; };
+		7260465E1676F2610049951E /* ITVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITVAppDelegate.m; sourceTree = "<group>"; };
+		726046611676F29C0049951E /* ITVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITVViewController.h; sourceTree = "<group>"; };
+		726046621676F29C0049951E /* ITVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITVViewController.m; sourceTree = "<group>"; };
+		726046651676F2AD0049951E /* UIImage+ImageFromView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageFromView.h"; sourceTree = "<group>"; };
+		726046661676F2AD0049951E /* UIImage+ImageFromView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageFromView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,6 @@
 		53F9D85B166DDE1400CE185A = {
 			isa = PBXGroup;
 			children = (
-				53F9D8FB166F72CA00CE185A /* MediaPlayer.framework */,
 				53F9D870166DDE1400CE185A /* ImageToVideo */,
 				53F9D869166DDE1400CE185A /* Frameworks */,
 				53F9D867166DDE1400CE185A /* Products */,
@@ -106,6 +105,7 @@
 		53F9D869166DDE1400CE185A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53F9D8FB166F72CA00CE185A /* MediaPlayer.framework */,
 				53F9D8AD166F13F000CE185A /* MobileCoreServices.framework */,
 				53F9D8AB166F13E300CE185A /* Security.framework */,
 				53F9D8A9166F137A00CE185A /* CoreVideo.framework */,
@@ -125,15 +125,9 @@
 		53F9D870166DDE1400CE185A /* ImageToVideo */ = {
 			isa = PBXGroup;
 			children = (
-				53F9D894166F0D7000CE185A /* UIImage+ImageFromView.h */,
-				53F9D895166F0D7000CE185A /* UIImage+ImageFromView.m */,
+				726046601676F29C0049951E /* RootViewControllers */,
+				7260465C1676F2610049951E /* AppDelegates */,
 				53F9D88A166DDE2700CE185A /* ImageToVideo */,
-				53F9D879166DDE1400CE185A /* ITVAppDelegate.h */,
-				53F9D87A166DDE1400CE185A /* ITVAppDelegate.m */,
-				53F9D87C166DDE1400CE185A /* ITVViewController.h */,
-				53F9D87D166DDE1400CE185A /* ITVViewController.m */,
-				53F9D87F166DDE1400CE185A /* ITVViewController_iPhone.xib */,
-				53F9D882166DDE1400CE185A /* ITVViewController_iPad.xib */,
 				53F9D871166DDE1400CE185A /* Supporting Files */,
 			);
 			path = ImageToVideo;
@@ -153,10 +147,41 @@
 		53F9D88A166DDE2700CE185A /* ImageToVideo */ = {
 			isa = PBXGroup;
 			children = (
+				726046641676F2AD0049951E /* UIImage-ImageFromView */,
 				53F9D88B166DDE5C00CE185A /* ImageToVideo.h */,
 				53F9D88C166DDE5C00CE185A /* ImageToVideo.m */,
 			);
 			name = ImageToVideo;
+			sourceTree = "<group>";
+		};
+		7260465C1676F2610049951E /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				7260465D1676F2610049951E /* ITVAppDelegate.h */,
+				7260465E1676F2610049951E /* ITVAppDelegate.m */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		726046601676F29C0049951E /* RootViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				53F9D87F166DDE1400CE185A /* ITVViewController_iPhone.xib */,
+				53F9D882166DDE1400CE185A /* ITVViewController_iPad.xib */,
+				726046611676F29C0049951E /* ITVViewController.h */,
+				726046621676F29C0049951E /* ITVViewController.m */,
+			);
+			path = RootViewControllers;
+			sourceTree = "<group>";
+		};
+		726046641676F2AD0049951E /* UIImage-ImageFromView */ = {
+			isa = PBXGroup;
+			children = (
+				726046651676F2AD0049951E /* UIImage+ImageFromView.h */,
+				726046661676F2AD0049951E /* UIImage+ImageFromView.m */,
+			);
+			name = "UIImage-ImageFromView";
+			path = "ImageToVideo/UIImage-ImageFromView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,9 +250,9 @@
 			files = (
 				53F9D897166F0DD100CE185A /* ImageToVideo.m in Sources */,
 				53F9D877166DDE1400CE185A /* main.m in Sources */,
-				53F9D87B166DDE1400CE185A /* ITVAppDelegate.m in Sources */,
-				53F9D87E166DDE1400CE185A /* ITVViewController.m in Sources */,
-				53F9D896166F0D7000CE185A /* UIImage+ImageFromView.m in Sources */,
+				7260465F1676F2610049951E /* ITVAppDelegate.m in Sources */,
+				726046631676F29C0049951E /* ITVViewController.m in Sources */,
+				726046671676F2AD0049951E /* UIImage+ImageFromView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +273,7 @@
 				53F9D880166DDE1400CE185A /* en */,
 			);
 			name = ITVViewController_iPhone.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		53F9D882166DDE1400CE185A /* ITVViewController_iPad.xib */ = {
@@ -256,6 +282,7 @@
 				53F9D883166DDE1400CE185A /* en */,
 			);
 			name = ITVViewController_iPad.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -363,6 +390,7 @@
 				53F9D889166DDE1400CE185A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
